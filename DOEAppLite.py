@@ -9,7 +9,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 import io
 
 st.set_page_config(page_title="軽量DOEアプリ", layout="wide")
-st.title("🔬 軽量版 実験計画支援アプリ（拡張版）")
+st.title("🔬 軽量版 実験計画支援アプリ")
 
 # =========================================================
 # ① 実験候補生成
