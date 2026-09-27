@@ -162,7 +162,7 @@ if uploaded_train and uploaded_candidates:
 from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 
-st.header("📘 最終レポート生成（Excel 横並び・安定版）")
+st.header("📘 最終レポート生成（Excel）")
 
 required_keys = [
     "candidates_raw",
@@ -182,7 +182,7 @@ missing = [k for k in required_keys if k not in st.session_state]
 if missing:
     st.warning(f"以下のデータが不足しています: {missing}")
 else:
-    if st.button("📥 Excelレポート（横並び）を生成する"):
+    if st.button("📥 Excelレポートを生成する"):
 
         # ★ openpyxl で新規 Workbook を作成（安全）
         wb = Workbook()
